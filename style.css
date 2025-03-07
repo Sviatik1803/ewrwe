@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+ font-family:'Montserrat',sans-serif;
+ background-color: #bdd4e7;
+}
+
+
+.container{
+
+    display:none;
+    align-items:center;
+    flex-direction:column;
+    margin-top: 175px;
+
+
+}
+
+.question{
+
+    font-size:40px;
+
+}
+
+
+
+.answers{
+
+    display:flex;
+}
+
+.answer{
+
+    width: 65px; 
+    height: 65px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media (orientation: portrait) and (max-width: 450px) {
+  .answers {
+     
+      flex-wrap: wrap;  /* Дозволяємо перенесення на новий рядок */
+      gap: 5px;  /* Задаємо відступи між елементами */
+      justify-content: center;  /* Центруємо елементи */
+  }
+  .answer {
+      width: 40px; 
+      height: 40px;
+      margin: 5px;  /* Додаємо запасний варіант, якщо gap не працює */
+  }
+}
+
+
+
+.container-button{
+      display: flex;
+  justify-content: center; /* центрування по горизонталі */
+  align-items: center;     /* центрування по вертикалі */
+  flex-direction: column;
+  height: 100vh;  
+
+}
+
+.button{
+   
+
+  width:fit-content;
+  background-color: #1342cd; 
+  color: white; 
+  font-size: 18px; 
+  font-weight: bold; 
+  border: none; 
+  border-radius: 8px; 
+  padding:24px;
+  cursor: pointer; 
+  transition: all 0.3s ease-in-out; 
+  margin-bottom: 15px;
+}
+
+
+.button:hover {
+  background-color: #4169E1;
+  transform: scale(1.05); 
+}
+
+
+.button:active {
+  background-color: #1E90FF; 
+  transform: scale(0.98); 
+}
+
+
+
+
+
+
+.result{
+font-size: 20px;
+display:flex;
+justify-content:center;
+
+
+}
